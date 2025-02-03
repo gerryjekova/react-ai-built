@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String Form</title>
+</head>
+<body>
+    <h2>Reverse Your Input</h2>
+    <form id="reverseForm">
+        <input type="text" id="userInput" placeholder="Type something..." required>
+        <button type="submit">Reverse</button>
+    </form>
+    <p>Reversed Output: <span id="output"></span></p>
+
+    <script>
+        document.getElementById("reverseForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents page reload
+            
+            let inputText = document.getElementById("userInput").value;
+            let reversedText = inputText.split('').reverse().join('');
+
+            document.getElementById("output").textContent = reversedText;
+        });
+    </script>
+</body>
+</html>
