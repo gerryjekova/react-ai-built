@@ -33,11 +33,12 @@
       z-index: 1;
     }
 
-    /* Main container for the content */
+     /* GERRY changed in V2 */ 
     .container {
       position: relative;
       z-index: 2;
-      max-width: 400px;
+      width: 90%;           /* Responsive width */
+      max-width: 600px;     /* Maximum width to prevent stretching on large screens */
       margin: 50px auto;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.5); /* 50% opacity background */
@@ -68,12 +69,12 @@
       /* INSERT YOUR AVATAR IMAGE HERE (e.g., replace this div content with an <img> tag) */
     }
 
-    /* Link tree navigation */
+    /* GERRY changed in V2 */ 
     .link-tree a {
       display: block;
       margin: 15px auto;
       text-decoration: none;
-      width: 33.33%; /* Approximately 1/3 of container width */
+      width: 100%;  /* Now the buttons span the full width of the container */
     }
 
     /* Button styling */
